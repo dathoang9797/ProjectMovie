@@ -1,0 +1,7 @@
+.form-edit-profile .ant-input{
+    background-color: transparent;
+    text-align: right;
+}
+.form-edit-profile .ant-form-item-required::before{
+    display: none!important;
+}

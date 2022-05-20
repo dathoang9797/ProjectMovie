@@ -1,0 +1,57 @@
+#profile_sidebar .ant-drawer-body {
+  padding: 0.75rem;
+}
+
+#profile_sidebar .ant-drawer-content-wrapper {
+    width: 100% !important;
+}
+
+#profile_sidebar .ant-drawer-header-close-only {
+    padding-bottom: 0;
+    border:         none;
+    position:       absolute;
+    background:     transparent;
+    right:          1rem;
+    top:            1rem;
+}
+
+#profile_sidebar .ant-drawer-close {
+    color:      #131313;
+    font-size:  1.5rem;
+    transition: all 0.3s ease-in-out;
+    animation:  moveLeftOut 1s ease-in-out infinite;
+    z-index:    1;
+    align-self: center!important;
+    text-align: center;
+}
+
+#profile_sidebar .ant-drawer-close::before {
+    content:       '';
+    position:      absolute;
+    top:           0;
+    left:          0;
+    width:         2rem;
+    height:        2rem;
+    border-radius: 50%;
+    background:    #BFDBFE;
+    transform: translateX(-0.2rem);
+    z-index: -1;
+}
+
+@keyframes moveLeftOut {
+    0% {
+        opacity:          50%;
+        transform-origin: 0 0;
+        transform:        translateX(10%);
+    }
+    50% {
+        opacity:          1;
+        transform-origin: 0 0;
+        transform:        translateX(0);
+    }
+    100% {
+        opacity:          50%;
+        transform-origin: 0 0;
+        transform:        translateX(10%);
+    }
+}

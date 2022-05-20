@@ -2,10 +2,10 @@ import { nanoid } from '@reduxjs/toolkit';
 import UserTemplate from '@Templates/UserTemplate';
 import React, { lazy } from 'react';
 
-// const HomePage = lazy(() => import('@Pages/HomePage'));
+const Profile = lazy(() => import('@Pages/Profile'));
 
 export const routerUserTemplate = [
-  // { path: process.env.REACT_APP_LINK_HOME, componentPage: HomePage },
+  { path: process.env.REACT_APP_LINK_PROFILE, componentPage: Profile },
 ];
 
 // export const routerAdminTemplate = [

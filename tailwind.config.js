@@ -34,6 +34,8 @@ module.exports = {
         "green-theme": "rgb(106, 201, 119)",
         "yellow-theme": "#FDCE00",
         "green-mint-theme": "rgb( 70, 220, 216)",
+        "teal-50": "rgb(240, 253, 250)",
+        "teal-100": "#e6fffa"
       },
       borderWidth: {
         5: "5px",
@@ -55,8 +57,6 @@ module.exports = {
       },
       width: {
         22: "88px",
-        84: "336px",
-        84: "336px",
         84: "336px",
         114: "460px",
       },
@@ -117,5 +117,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  
+
 };
