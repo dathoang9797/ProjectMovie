@@ -35,7 +35,8 @@ module.exports = {
         "yellow-theme": "#FDCE00",
         "green-mint-theme": "rgb( 70, 220, 216)",
         "teal-50": "rgb(240, 253, 250)",
-        "teal-100": "#e6fffa"
+        "teal-100": "#e6fffa",
+        "teal-600": "#319795",
       },
       borderWidth: {
         5: "5px",

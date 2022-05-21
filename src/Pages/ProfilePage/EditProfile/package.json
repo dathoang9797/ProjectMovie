@@ -1,0 +1,5 @@
+{
+  "name": "EditProfile",
+  "main:": "./EditProfile.jsx",
+  "private": "true"
+}

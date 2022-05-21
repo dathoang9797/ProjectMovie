@@ -1,7 +1,7 @@
 import tw, {styled} from 'twin.macro';
 
 const CardOutlineProfile = styled.div`
-  ${tw`w-full flex-col flex justify-center items-center py-8 bg-teal-50 rounded-3xl shadow shadow-lg mb-2 overflow-hidden`}
+  ${tw`w-full flex-col flex justify-center items-center py-8 bg-teal-50 rounded-3xl shadow-lg mb-2 overflow-hidden`}
 `
 const AvatarOutline = styled.div`
   ${tw`z-10 rounded-full p-[5px] lg:w-[160px] md:w-[130px] w-[90px] relative`}
@@ -35,27 +35,15 @@ const ButtonShowDrawer = styled.button`
       ${tw`w-full h-full absolute bg-blue-300 rounded-full top-0 left-0 z-[-1] opacity-[0.5] transform translate-x-[-20%]`}
     }
   animation: moveRightOut 1s ease-in-out infinite;
-  @keyframes moveRightOut {
-    0% {
-      opacity:          80%;
-      transform-origin: 0 0;
-      transform:        translateX(-10%);
-    }
-    50% {
-      opacity:          1;
-      transform-origin: 0 0;
-      transform:        translateX(0);
-    }
-    100% {
-      opacity:          80%;
-      transform-origin: 0 0;
-      transform:        translateX(-10%);
-    }
-  }
+`
+
+const AvatarImg = styled.img`
+    ${tw`rounded-full lg:w-[150px] lg:h-[150px] md:w-[120px] md:h-[120px] w-[80px] h-[80px] cursor-pointer`}
 `
 
 export const ProfilePageCSS = {
     CardOutlineProfile,
     AvatarOutline,
-    ButtonShowDrawer
+    ButtonShowDrawer,
+    AvatarImg
 }

@@ -21,7 +21,15 @@ const ButtonEscape = styled(Button)`
   }
 `
 
+const ButtonNavigationProfile = styled.button`
+  ${tw`bg-blue-200 rounded-full w-9 h-9 flex justify-center items-center transition transition-all duration-300 ease-in-out`}
+  &:hover{
+    ${tw`text-teal-600`}
+   }
+`
+
 export const ButtonCSS = {
     ButtonPrimary,
-    ButtonEscape
+    ButtonEscape,
+    ButtonNavigationProfile
 }

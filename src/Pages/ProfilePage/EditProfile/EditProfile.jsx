@@ -1,9 +1,9 @@
 import React, {useEffect} from "react";
 import {Form, Input, message} from "antd";
 import validator from "validator";
-import "./index.css";
+import "./EditProfile.css";
 import {ButtonCSS} from "@Components/Button";
-import {ProfilePageCSS} from "../Profile.style"
+import {ProfilePageCSS} from "../ProfilePage.style"
 
 const {CardOutlineProfile} = ProfilePageCSS;
 
@@ -22,7 +22,6 @@ function EditProfile(props) {
             span: 16
         }
     };
-    console.log(process.env.REACT_APP_LINK_PROFILE)
 
     useEffect(() => {
         form.setFieldsValue(userInfo);
@@ -50,7 +49,9 @@ function EditProfile(props) {
     };
 
     return (
-        <CardOutlineProfile className="overflow-hidden">
+        <CardOutlineProfile
+            className="overflow-hidden"
+        >
             <h3>Chỉnh sửa tài khoản</h3>
             <Form {...layout} form={form} name="form-edit-profile" onFinish={onFinish} className="form-edit-profile">
                 <Form.Item

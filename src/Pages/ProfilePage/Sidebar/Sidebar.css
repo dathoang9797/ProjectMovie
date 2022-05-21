@@ -37,21 +37,3 @@
     transform: translateX(-0.2rem);
     z-index: -1;
 }
-
-@keyframes moveLeftOut {
-    0% {
-        opacity:          50%;
-        transform-origin: 0 0;
-        transform:        translateX(10%);
-    }
-    50% {
-        opacity:          1;
-        transform-origin: 0 0;
-        transform:        translateX(0);
-    }
-    100% {
-        opacity:          50%;
-        transform-origin: 0 0;
-        transform:        translateX(10%);
-    }
-}

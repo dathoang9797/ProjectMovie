@@ -1,5 +1,5 @@
 import React from 'react';
-import {ProfilePageCSS} from '../Profile.style';
+import {ProfilePageCSS} from '../ProfilePage.style';
 
 const {CardOutlineProfile} = ProfilePageCSS;
 

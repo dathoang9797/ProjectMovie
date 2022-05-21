@@ -78,4 +78,49 @@ export const AnimationCSS = css`
       top: 0px;
     }
   }
+
+  @keyframes circle {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes moveRightOut {
+    0% {
+      opacity:          80%;
+      transform-origin: 0 0;
+      transform:        translateX(-10%);
+    }
+    50% {
+      opacity:          1;
+      transform-origin: 0 0;
+      transform:        translateX(0);
+    }
+    100% {
+      opacity:          80%;
+      transform-origin: 0 0;
+      transform:        translateX(-10%);
+    }
+  }
+
+  @keyframes moveLeftOut {
+    0% {
+      opacity:          50%;
+      transform-origin: 0 0;
+      transform:        translateX(10%);
+    }
+    50% {
+      opacity:          1;
+      transform-origin: 0 0;
+      transform:        translateX(0);
+    }
+    100% {
+      opacity:          50%;
+      transform-origin: 0 0;
+      transform:        translateX(10%);
+    }
+  }
 `;

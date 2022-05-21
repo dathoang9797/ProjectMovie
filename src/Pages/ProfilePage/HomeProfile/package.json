@@ -1,0 +1,5 @@
+{
+  "name": "HomeProfile",
+  "main:": "./HomeProfile.jsx",
+  "private": "true"
+}

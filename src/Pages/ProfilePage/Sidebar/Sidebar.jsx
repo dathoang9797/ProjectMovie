@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import {Drawer} from "antd";
 import {DoubleLeftOutlined, DoubleRightOutlined} from "@ant-design/icons";
-import './index.css'
-import {ProfilePageCSS} from '../Profile.style'
+import './Sidebar.css'
+import {ProfilePageCSS} from '../ProfilePage.style'
 
 const {ButtonShowDrawer} = ProfilePageCSS
 
