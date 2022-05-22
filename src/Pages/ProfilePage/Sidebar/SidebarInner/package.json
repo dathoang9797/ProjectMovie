@@ -1,0 +1,5 @@
+{
+  "name": "SidebarInner",
+  "main:": "./SidebarInner.jsx",
+  "private": "true"
+}

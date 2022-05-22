@@ -5,8 +5,8 @@ const {CardOutlineProfile} = ProfilePageCSS;
 
 function ComingSoon() {
     return (
-        <CardOutlineProfile className='w-full h-full'>
-            <h2>Coming soon</h2>
+        <CardOutlineProfile className='w-full h-full flex justify-center items-center'>
+            <h2>Tính năng chưa được phát triển, vui lòng thử lại sau</h2>
         </CardOutlineProfile>
     );
 }

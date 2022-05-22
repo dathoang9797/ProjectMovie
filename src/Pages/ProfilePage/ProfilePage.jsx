@@ -7,6 +7,8 @@ import {userInfo} from "@Utils/FakeData/user1";
 import Sidebar from "@Pages/ProfilePage/Sidebar/Sidebar";
 import {ProfilePageCSS} from './ProfilePage.style'
 import {ButtonCSS} from "@Components/Button";
+import ComingSoon from "@Pages/ProfilePage/ComingSoon";
+import SidebarInner from "@Pages/ProfilePage/Sidebar/SidebarInner/SidebarInner.styles";
 
 const {ButtonNavigationProfile} = ButtonCSS
 const {AvatarOutline, CardOutlineProfile, AvatarImg} = ProfilePageCSS
@@ -17,7 +19,7 @@ function ProfilePage(props) {
     const HOME_PROFILE = process.env.REACT_APP_KEY_NAME_PROFILE_RENDER_HOME;
     const EDIT_PROFILE = process.env.REACT_APP_KEY_NAME_PROFILE_RENDER_EDIT;
     const [renderKey, setRenderKey] = useState(HOME_PROFILE);
-    console.log(userInfo.avatar)
+
     const handleRenderContent = (key) => {
         setRenderKey(key);
     };
@@ -33,7 +35,7 @@ function ProfilePage(props) {
                     <EditProfile userInfo={userInfo} setRenderKey={handleRenderContent}/>
                 );
             default:
-                return <div>Tính năng chưa được phát triển, vui lòng thử lại sau</div>;
+                return <ComingSoon/>;
         }
     };
     return(
@@ -41,7 +43,7 @@ function ProfilePage(props) {
             <Layout className="border-r-2 border-r-amber-600 shadow-2xl text-lg" hasSider={true}>
                 <div className="lg:w-[350px] md:w-[150px] w-0 h-screen bg-transparent">
                     <Sidebar renderKey={renderKey} >
-                        <div className="flex flex-col h-full w-full">
+                        <SidebarInner>
                             <CardOutlineProfile>
                                 <AvatarOutline>
                                     <AvatarImg
@@ -90,7 +92,7 @@ function ProfilePage(props) {
                                     </div>
                                 </div>
                             </CardOutlineProfile>
-                        </div>
+                        </SidebarInner>
                     </Sidebar>
                 </div>
                 <Layout>
